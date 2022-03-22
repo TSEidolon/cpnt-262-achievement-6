@@ -14,9 +14,9 @@
   }
 
   const items = ref ([
-    {id:1, name:"Derrick Rose"},
+    {id:1, name: "Derrick Rose"},
     {id:2, name: "Allen Iverson"},
-    {id:3, name:"Kevin Durant"}
+    {id:3, name: "Kevin Durant"}
   ])
 
 </script>
