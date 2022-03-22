@@ -1,6 +1,6 @@
 <script setup>
   import {ref} from 'vue'
-  import ChildComp from './components/ChildComp.vue'
+  import ChildVSlot from './components/ChildVSlot.vue'
   const message = ref('Hello My Name is Edgar and welcome to my lazily styled page')
   const titleColor = ref('title')
   const awesome = ref(false)
@@ -26,9 +26,10 @@
   <div class="DivContainer">
     <h1 :class="titleColor"> {{message}} </h1>
     <p> Click this button to know more about me! (Times clicked: {{counter}} )</p>
-    <ChildComp> 
+    <ChildVSlot> 
+      <!-- The <p> in ChildVSlot will output here -->
       Click Below 
-    </ChildComp>
+    </ChildVSlot>
 
 
     <button @click="toggle"> Click me! </button>
