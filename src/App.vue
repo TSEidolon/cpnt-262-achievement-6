@@ -2,6 +2,7 @@
   import {ref} from 'vue'
   import ChildVSlot from './components/ChildVSlot.vue'
   import ChildHeader from './components/ChildHeader.vue'
+  import ChildFooter from './components/ChildFooter.vue'
   const message = ref('Hello My Name is Edgar and welcome to my lazily styled page')
   const titleColor = ref('title')
   const awesome = ref(false)
@@ -26,7 +27,6 @@
   <div>
     <div>
       <ChildHeader>
-
       </ChildHeader>
     </div>
     <div class="MainContainer">
@@ -46,13 +46,14 @@
             {{item.name}}
           </li>
         </ul>
-
       </div>
       <div v-else>
         <h1> Reveal this information by clicking above! </h1>
       </div>
-    
-
+    </div>
+    <div>
+      <ChildFooter>
+      </ChildFooter>
     </div>
   </div>
 </template>
@@ -82,4 +83,8 @@ body {
   margin: 0;
   padding: 0;
 }
+body, html {
+  height: 100%;
+}
+
 </style>

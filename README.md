@@ -4,6 +4,7 @@
 App.vue in "/src/App.vue"
 v-slot content component in "/src/components/ChildVSlot.vue"
 v-slot header component in "/src/components/ChildHeader.vue"
+v-slot footer component in "/src/components/ChildFooter.vue"
 v-bind = line 27 in "App.vue"
 v-for = line 39 in "App.vue"
 ```
