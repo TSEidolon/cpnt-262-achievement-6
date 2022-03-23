@@ -31,7 +31,7 @@
     </div>
     <div class="MainContainer">
       <h1 :class="titleColor"> {{message}} </h1>
-      <p> Click this button to know more about me! (Times clicked: {{counter}} )</p>
+      <p> Click this button to know something cool! (Times clicked: {{counter}} )</p>
       <ChildVSlot> 
         <!-- The <p> in ChildVSlot will output here -->
         Click Below 
