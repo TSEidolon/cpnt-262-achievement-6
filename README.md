@@ -15,8 +15,8 @@ v-for = line 39 in "App.vue"
     - Anything above or below `<slot/ >` will show in relation to their position.
 
 ```
-    <ChildVSlot> 
-      <!-- The <p> in ChildVSlot will output here -->
+    <ChildVSlot> <!-- Anything inside this will have use the template,style, and script from the respective vue component -->
+      <!-- The <p> in ChildVSlot.vue will output here -->
       Click Below  
     </ChildVSlot>
 ```
